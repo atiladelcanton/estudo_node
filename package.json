@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "consign": "^0.1.6",
+    "dotenv": "^5.0.0",
     "ejs": "^2.5.7",
     "express": "^4.16.2",
     "mysql": "^2.15.0"
