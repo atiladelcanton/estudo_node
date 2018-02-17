@@ -1,12 +1,22 @@
 <!DOCTYPE html>
-	<html lang="pt-br">
-		<head>
-			<meta charset="utf-8"/>
-			<title>Portal de notícias</title>
-		</head>
+<html lang="en">
+	<head>
+		<title>Portal Noticias - <%= noticia[0].titulo %></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	</head>
 	<body>
-
-		<h1>Notícia</h1>
-
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1><%= noticia[0].titulo %></h1>
+				</div>
+				<p class="col-md-12">
+					<%= noticia[0].noticia %>
+				</p>
+			</div>
+		</div>
 	</body>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </html>

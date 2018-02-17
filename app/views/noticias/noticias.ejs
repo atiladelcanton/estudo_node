@@ -4,12 +4,12 @@
 		<title>Portal Noticias - Noticias</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="css/style.css" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 	</head>
 	<body>
 		<h1>Listagem Noticias</h1>
 
-		<table border="1" cellspacing="2" cellpadding="2">
+		<table class="table table-bordered">
 			<thead>
 				<tr>
 					<th>#</th>
@@ -20,10 +20,11 @@
 			<% for(var i=0; i < noticias.length; i++){ %>
 				<tr>
 					<td><%= noticias[i].id %></td>
-					<td><%= noticias[i].titulo %></td>
+					<td><a href="/noticia/<%= noticias[i].slug %>"><%= noticias[i].titulo %></a></td>
 				</tr>
 				<% } %>
 			</tbody>
 		</table>
 	</body>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </html>
