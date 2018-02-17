@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Portal Noticias - Noticias</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<h1>Listagem Noticias</h1>
+
+		<table border="1" cellspacing="2" cellpadding="2">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Titulo</th>
+				</tr>
+			</thead>	
+			<tbody>
+			<% for(var i=0; i < noticias.length; i++){ %>
+				<tr>
+					<td><%= noticias[i].id %></td>
+					<td><%= noticias[i].titulo %></td>
+				</tr>
+				<% } %>
+			</tbody>
+		</table>
+	</body>
+</html>
